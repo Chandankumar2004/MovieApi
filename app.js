@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function addEventListeners() {
     document.getElementById("submitLogin").addEventListener("click", handleLogin);
     elements.logoutBtn.addEventListener("click", handleLogout);
-    elements.logo.addEventListener("click", () => loadMovies(currentSearch || "popular", 1));
+    elements.logo.addEventListener("click", () => loadMovies(currentSearch || "movie", 1));
     elements.searchBtn.addEventListener("click", handleSearch);
     elements.searchInput.addEventListener("keyup", (e) => {
       elements.clearSearchBtn.style.display = e.target.value ? "block" : "none";
@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
     elements.logoutBtn.style.display = "inline-block";
     elements.favoritesBtn.style.display = "inline-block";
     if (!currentSearch) {
-        loadMovies("popular", 1);
+        loadMovies("movie", 1);
     }
   }
 
