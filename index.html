@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyMovies Advanced</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo" id="logo">🎬 MyMovies</div>
+      <nav>
+        <button id="favoritesBtn" style="display: none">My Favorites</button>
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="theme-checkbox">
+            <input type="checkbox" id="theme-checkbox" />
+            <div class="slider round"></div>
+          </label>
+        </div>
+        <button id="logoutBtn" style="display: none">Logout</button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Login Form -->
+      <div id="loginForm">
+        <h2>Login</h2>
+        <input type="email" id="email" placeholder="Email" />
+        <input type="password" id="password" placeholder="Password" />
+        <button id="submitLogin">Login</button>
+        <p id="loginError"></p>
+      </div>
+
+      <!-- Search + Movies Section -->
+      <div id="moviesSection" style="display: none">
+        <div class="controls-container">
+          <div class="search-bar">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Enter movie name"
+            />
+            <button id="clearSearchBtn" style="display: none">&times;</button>
+            <button id="searchBtn">Search</button>
+          </div>
+          <button id="surpriseBtn">🎉 Surprise Me!</button>
+        </div>
+
+        <div class="filter-sort-container">
+          <div class="filter-group">
+            <label for="yearFilter">Year:</label>
+            <input type="number" id="yearFilter" placeholder="e.g., 2023" />
+          </div>
+          <div class="filter-group">
+            <label for="typeFilter">Type:</label>
+            <select id="typeFilter">
+              <option value="">All</option>
+              <option value="movie">Movie</option>
+              <option value="series">Series</option>
+              <option value="episode">Episode</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="sortOrder">Sort by:</label>
+            <select id="sortOrder">
+              <option value="">Default</option>
+              <option value="title-asc">Title (A-Z)</option>
+              <option value="title-desc">Title (Z-A)</option>
+              <option value="year-desc">Year (Newest)</option>
+              <option value="year-asc">Year (Oldest)</option>
+            </select>
+          </div>
+          <div class="view-toggle">
+            <button id="viewToggleBtn">List View</button>
+          </div>
+        </div>
+
+        <div id="moviesContainer" class="grid-view"></div>
+        <div id="loader" class="loader" style="display: none"></div>
+        <div id="pagination"></div>
+      </div>
+    </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal">&times;</span>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+
+    <button id="backToTopBtn" style="display: none">^</button>
+
+    <script src="app.js"></script>
+  </body>
+</html>
