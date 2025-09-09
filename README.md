@@ -41,12 +41,12 @@
 
 | Page | Preview |
 |------|---------|
-| **Login Page** | ![Login Page](screenshots/login-page.png) |
-| **Movie Search Grid** | ![Movie Search Grid](screenshots/search-grid.png) |
-| **Movie Details** | ![Movie Details](screenshots/movie-details.png) |
-| **Favorites Page** | ![Favorites Page](screenshots/favorites.png) |
-| **Theme Toggle** | ![Theme Toggle](screenshots/theme-toggle.png) |
-| **Contact Form** | ![Contact Form](screenshots/contact-form.png) |
+| **Login Page** | ![Login Page](https://github.com/Chandankumar2004/MovieApi/blob/140b56b5e575a87c8db92d533f657d609c32ed36/login.png) |
+| **Treanding & Grid** | ![Movie Search Grid](https://github.com/Chandankumar2004/MovieApi/blob/140b56b5e575a87c8db92d533f657d609c32ed36/Trending%20%26%20Grid_view.png) |
+| **Home & List** | ![Home & List](https://github.com/Chandankumar2004/MovieApi/blob/140b56b5e575a87c8db92d533f657d609c32ed36/Home%20%26%20List_view.png) |
+| **Favorites** | ![Favorites](https://github.com/Chandankumar2004/MovieApi/blob/140b56b5e575a87c8db92d533f657d609c32ed36/My%20Favorite.png) |
+| **Theme Toggle** | ![Theme Toggle](https://github.com/Chandankumar2004/MovieApi/blob/140b56b5e575a87c8db92d533f657d609c32ed36/Dark%20%26%20Them.png) |
+| **Contact Form** | ![Contact Form](https://github.com/Chandankumar2004/MovieApi/blob/140b56b5e575a87c8db92d533f657d609c32ed36/Message.png) |
 
 ---
 
