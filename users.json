@@ -1,9 +1,7 @@
 [
   {
-    "name": "chandan",
-    "email": "chandan32005@gmail.com",
-    "password": "chandan@123"
-  },
-  { "name": "admin", "email": "admin@gmail.com", "password": "admin@123" },
-  { "name": "user", "email": "user@gmail.com", "password": "user@123" }
+    "name": "admin",
+    "email": "admin@gmail.com",
+    "password": "user@123"
+  }
 ]

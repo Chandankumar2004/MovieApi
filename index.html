@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyMovies Advanced</title>
     <link rel="stylesheet" href="styles.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("tZRaqOmt1vQ8yy1Ps");
+      })();
+    </script>
   </head>
   <body>
     <header>
@@ -29,6 +38,10 @@
         <input type="password" id="password" placeholder="Password" />
         <button id="submitLogin">Login</button>
         <p id="loginError"></p>
+        <div class="demo-credentials">
+          <p><strong>Demo Email:</strong> admin@gmail.com</p>
+          <p><strong>Demo Password:</strong> user@123</p>
+        </div>
       </div>
 
       <!-- Search + Movies Section -->
@@ -81,11 +94,55 @@
       </div>
     </main>
 
-    <!-- Modal -->
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2025 MyMovies. All rights reserved.</p>
+        <p>Powered by OMDB API</p>
+        <div class="footer-links">
+          <a href="#" id="contactUsLink">Contact Us</a>
+          <a href="#" id="termsLink">Terms of Service</a>
+          <a href="#" id="privacyLink">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Movie Details Modal -->
     <div id="modal" class="modal">
       <div class="modal-content">
         <span id="closeModal">&times;</span>
         <div id="modalBody"></div>
+      </div>
+    </div>
+
+    <!-- Contact Us Modal -->
+    <div id="contactModal" class="modal">
+      <div class="modal-content">
+        <span id="closeContactModal">&times;</span>
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+          <input type="text" id="contactName" placeholder="Your Name" required />
+          <input type="email" id="contactEmail" placeholder="Your Email" required />
+          <textarea id="contactMessage" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Terms of Service Modal -->
+    <div id="termsModal" class="modal">
+      <div class="modal-content">
+        <span id="closeTermsModal">&times;</span>
+        <h2>Terms of Service</h2>
+        <p>This is a demo application. All movie data is provided by OMDB API. By using this application, you agree to their terms of service.</p>
+      </div>
+    </div>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacyModal" class="modal">
+      <div class="modal-content">
+        <span id="closePrivacyModal">&times;</span>
+        <h2>Privacy Policy</h2>
+        <p>We do not store any of your personal information, except for your login status, which is stored locally on your device. We do not share your information with any third parties.</p>
       </div>
     </div>
 

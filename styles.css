@@ -275,7 +275,11 @@ button:hover {
   to { transform: scale(1); opacity: 1; }
 }
 
-#closeModal { float: right; font-size: 1.5rem; cursor: pointer; }
+#closeModal, #closeContactModal, #closeTermsModal, #closePrivacyModal {
+  float: right;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
 
 /* --- THEME SWITCH --- */
 .theme-switch-wrapper { display: flex; align-items: center; }
@@ -294,3 +298,66 @@ input:checked + .slider:before { transform: translateX(26px); }
 
 .loader { border: 5px solid #f3f3f3; border-top: 5px solid var(--gradient-start); border-radius: 50%; width: 50px; height: 50px; animation: spin 1s linear infinite; margin: 2rem auto; }
 @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+.demo-credentials {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.demo-credentials p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 1rem;
+  background: var(--header-bg-color);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content p {
+  font-size: 0.9rem;
+  margin: 0.25rem 0;
+}
+
+.footer-links {
+  margin-top: 0.5rem;
+}
+
+.footer-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin: 0 0.5rem;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--gradient-end);
+}
+
+#contactForm input, #contactForm textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: 1px solid var(--card-bg-color);
+  border-radius: 5px;
+  background-color: var(--input-bg-color);
+  color: var(--input-text-color);
+}
+
+#contactForm textarea {
+  height: 150px;
+}
