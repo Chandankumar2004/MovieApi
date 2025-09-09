@@ -1,4 +1,4 @@
-<h1 align="center">🎬 MyMovies Advanced</h1> 
+<h1 align="center">🎬 MyMovies</h1> 
 
 <p align="center">
   ⭐ <b>Star this repository</b> to support the project!
@@ -7,7 +7,7 @@
 <h3 align="center"><code>HTML + CSS + JavaScript + OMDB API</code></h3> 
 
 <p align="center"> 
-  <a href="https://github.com/YourUsername/MyMovies-Advanced/stargazers">
+  <a href="[https://github.com/YourUsername/MyMovies-Advanced/stargazers](https://github.com/Chandankumar2004/MovieApi)">
     <img src="https://img.shields.io/github/stars/YourUsername/MyMovies-Advanced?style=for-the-badge&color=yellow" alt="GitHub Stars"/>
   </a> 
   <a href="https://github.com/YourUsername/MyMovies-Advanced/network/members">
